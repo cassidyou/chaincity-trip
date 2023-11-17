@@ -407,9 +407,9 @@ header{
     align-items: center;
 }
 
-.navbar #logo {
+.navbar #log {
     height: auto;
-    width: 30%;
+    width: 100px;
 }
 
 .nav-link {
