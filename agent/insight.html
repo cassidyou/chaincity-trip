@@ -7,7 +7,7 @@
      <title>ChainCity || Insights</title>
 
      <!--asset-->
-     <link rel="shortcut icon" type="text/css" href="../asset/img/chaincitylogo.jpg">
+     <link rel="shortcut icon" type="text/css" href="../asset/img/logo.png">
 
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
@@ -35,119 +35,262 @@
      <div class="page-wrapper">
           <header>
                <nav class="navbar navbar-expand-lg">
-                    <div class="container cosynav">
-                         <a class="navbar-brand" href=""><img src="../asset/img/logo.png" class="img-fluid" id="log"
-                                   alt="logo"></a>
-                         <!-- Search -->
-                         <button class="btn_sc" data-bs-toggle="modal" data-bs-target="#searchModal">
-                              <span class="text-muted sc_icon_ctn">
-                                   <i class="fa fa-search"></i> &nbsp;
-                                   <span class="search_keyword" style="opacity: .6;">Search here...</span>
-                              </span>
-                              <span class="filter_icon"><img src="../asset/img/filter.png" alt=""></span>
-                         </button>
-                         <!-- Profile dropdown on small screen -->
-                         <div class="nav-item  dropdown pfl_ctn_sm">
-                              <a class="nav-link" style="margin-left: 0!important;" href="#" role="button"
-                                   data-bs-toggle="dropdown" aria-expanded="false">
-                                   <div class="pinf__ctn">
-                                        <div class="pinf_anm">DA</div>
-                                        <div class="pinf_inf">
-                                             <span>Danny A</span>
-                                             <span>d***@gmail.com</span>
-                                        </div>
+                   <div class="container cosynav">
+                       <a class="navbar-brand" href=""><img src="../asset/img/logo.png" class="img-fluid" id="log"
+                               alt="logo"></a>
+                       <!-- Search -->
+                       <button class="btn_sc" data-bs-toggle="modal" data-bs-target="#searchModal">
+                           <span class="text-muted sc_icon_ctn">
+                               <i class="fa fa-search"></i> &nbsp;
+                               <span class="search_keyword" style="opacity: .6;">Search here...</span>
+                           </span>
+                           <span class="filter_icon"><img src="../asset/img/filter.png" alt=""></span>
+                       </button>
+                      
+                       <div class="nav-item nft-ctn">
+                            <a class="nav-link" href="message.html">
+                                 <div class="sm_alt_ctn">
+                                      <i class="fa fa-envelope"></i>
+                                      <span class="counter">999</span>
+                                 </div>
+                            </a>
+                       </div>
+                       <!-- Notification dropdown for small screen -->
+                       <div class="nav-item dropdown nft-ctn">
+                            <a class="nav-link" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                                 <div class="sm_alt_ctn">
+                                      <i class="fa fa-bell"></i>
+                                      <span class="counter">28</span>
+                                 </div>
+                            </a>
+                            <!-- No notification template -->
+                            <ul class="dropdown-menu ntf_dpw p-3" style="margin-left: -100px;">
+                              <li class="d-flex align-items-center justify-content-center" style="height: 200px;">
+                                  <div class="text-center">
+                                        <img src="../asset/img/no_notification.png" width="60px" alt="">
+                                        <div class="mt-2">No notification yet</div>
+                                  </div>
+                              </li>
+                           </ul>
+                       </div>
+                      
+                       <!-- Profile dropdown on small screen -->
+                       <div class="nav-item  dropdown pfl_ctn_sm">
+                           <a class="nav-link" style="margin-left: 0!important;" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                               <div class="pinf__ctn">
+                                   <div class="pinf_anm">DA</div>
+                                   <div class="pinf_inf">
+                                       <span>Danny A</span>
+                                       <span>d***@gmail.com</span>
                                    </div>
-                              </a>
-                              <ul class="dropdown-menu pfl_dpw">
+                               </div>
+                           </a>
+                           <ul class="dropdown-menu pfl_dpw">
+                               <li class="p-1"><a class="dropdown-item" href="profile.html"><i
+                                           class="fa fa-user"></i>&nbsp;
+                                       Profile</a></li>
+                               <li class="p-1"><a class="dropdown-item" href="notification.html"><i
+                                           class="fa fa-bell"></i>&nbsp;
+                                       Notification</a></li>
+                               <li class="p-1"><a class="dropdown-item" href="message.html"><i
+                                           class="fa fa-envelope"></i>&nbsp;
+                                       Message</a></li>
+                               <li class="p-1"><a class="dropdown-item" href="reservation.html"><i
+                                           class="fa fa-calendar-check"></i>&nbsp; Reservation</a></li>
+                               <li class="p-1"><a class="dropdown-item" href="listing.html"><i
+                                           class="fa fa-bookmark"></i>&nbsp;
+                                       Saved Listing</a></li>
+                               <li class="p-1"><a class="dropdown-item" href="insight.html"><i class="fa fa-eye"></i>&nbsp;
+                                       Insights</a></li>
+                               <li class="p-1"><a class="dropdown-item" href="history.html"><i
+                                           class="fa fa-history"></i>&nbsp;
+                                       History</a></li>
+                               <li><a class="dropdown-item" href="../login.html"><i class="fa fa-sign-out-alt"></i>&nbsp;
+                                       Logout</a></li>
+                           </ul>
+                       </div>
+   
+                       <!-- Nav Item -->
+                       <ul class="navbar-nav ma-auto  nav-sm">
+                           <!-- Logo on small screen -->
+                           <div class="sm-logo-ctn d-lg-none ">
+                               <img src="../asset/img/logo.png" class="img-fluid mb-2" alt="">
+                           </div>
+                           <!-- <span class="close d-lg-none d-sm-block">&times;</span> -->
+                           <li class="nav-item">
+                               <a class="nav-link active" href="dashboard.html">Home </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="javascript:;">About</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link " href="javascript:;">Faq</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link getstarted-btn" href="javascript:;">Contact us</a>
+                           </li>
+                            <a class="nav-link" href="message.html">
+                                 <div class="sm_alt_ctn lg_dp">
+                                      <i class="fa fa-envelope"></i>
+                                      <span class="counter">28</span>
+                                 </div>
+                            </a>
+                           <div class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <div class="sm_alt_ctn lg_dp">
+                                      <i class="fa fa-bell"></i>
+                                      <span class="counter">28</span>
+                                 </div>
+                            </a>
+                            <ul class="dropdown-menu ntf_dpw p-3">
+                                <li class="d-flex align-items-start justify-content-between border-bottom py-3">
+                                 <h3 class="dsb-header-xs text-primary mb-0">Notifications</h3>
+                                 <a href="notification.html" class="text-dark">See all <i class="fa fa-arrow-right"></i></a>
+                                </li>
+                                 <li class="nav_dpd_itm">
+                                      <div class="d-flex align-items-center justify-content-between">
+                                           <div class="d-flex align-items-start justify-content-start gap-2">
+                                                <div class="img">
+                                                     <img src="../asset/img/note-2.png" alt="">
+                                                </div>
+                                                <div >
+                                                     <a href="notification.html" class="text-dark">
+                                                          <h5 class="ntf_heading"><strong>New listing created</strong></h5>
+                                                          <small class="ntf_stdt">You created a new listing now</small>
+                                                     </a>
+                                                </div>
+                                           </div>
+                                           <p class="ntf_tme">11:46am</p>
+                                      </div>
+                                 </li>
+                                 <li class="nav_dpd_itm">
+                                      <div class="d-flex align-items-center justify-content-between">
+                                           <div class="d-flex align-items-start justify-content-start gap-2">
+                                                <div class="img">
+                                                     <img src="../asset/img/bookings_nt_img.png" alt="">
+                                                </div>
+                                                <div >
+                                                     <a href="notification.html" class="text-dark">
+                                                          <h5 class="ntf_heading"><strong>50 new bookings generated</strong></h5>
+                                                          <small class="ntf_stdt">You have 50 new bookings today</small>
+                                                     </a>
+                                                </div>
+                                           </div>
+                                           <p class="ntf_tme">Yesterday</p>
+                                      </div>
+                                 </li>
+                                 <li class="nav_dpd_itm">
+                                      <div class="d-flex align-items-center justify-content-between">
+                                           <div class="d-flex align-items-start justify-content-start gap-2">
+                                                <div class="img">
+                                                     <img src="../asset/img/moneys.png" alt="">
+                                                </div>
+                                                <div>
+                                                     <a href="notification.html" class="text-dark">
+                                                          <h5 class="ntf_heading"><strong>Payout of <span class="text-primary">$34,989</span> was made</strong></h5>
+                                                          <small class="ntf_stdt">Your monthly payout was sent to your account</small>
+                                                     </a>
+                                                </div>
+                                           </div>
+                                           <p class="ntf_tme">Yesterday</p>
+                                      </div>
+                                 </li>
+                                 <li class="nav_dpd_itm">
+                                      <div class="d-flex align-items-center justify-content-between">
+                                           <div class="d-flex align-items-start justify-content-start gap-2">
+                                                <div class="img">
+                                                     <img src="../asset/img/note-2-read.png" alt="">
+                                                </div>
+                                                <div >
+                                                     <a href="notification.html" class="text-dark read">
+                                                          <h5 class="ntf_heading"><strong>New listing created</strong></h5>
+                                                          <small class="ntf_stdt">You created a new listing now</small>
+                                                     </a>
+                                                </div>
+                                           </div>
+                                           <p class="ntf_tme">11:46am</p>
+                                      </div>
+                                 </li>
+                                 <li class="nav_dpd_itm">
+                                      <div class="d-flex align-items-center justify-content-between">
+                                           <div class="d-flex align-items-start justify-content-start gap-2">
+                                                <div class="img">
+                                                     <img src="../asset/img/bookings_nt_img_read.png" alt="">
+                                                </div>
+                                                <div >
+                                                     <a href="notification.html" class="text-dark read">
+                                                          <h5 class="ntf_heading"><strong>50 new bookings generated</strong></h5>
+                                                          <small class="ntf_stdt">You have 50 new bookings today</small>
+                                                     </a>
+                                                </div>
+                                           </div>
+                                           <p class="ntf_tme">Yesterday</p>
+                                      </div>
+                                 </li>
+                                 <li class="nav_dpd_itm">
+                                      <div class="d-flex align-items-center justify-content-between">
+                                           <div class="d-flex align-items-start justify-content-start gap-2">
+                                                <div class="img">
+                                                     <img src="../asset/img/moneys-read.png" alt="">
+                                                </div>
+                                                <div>
+                                                     <a href="notification.html" class="text-dark read">
+                                                          <h5 class="ntf_heading"><strong>Payout of <span class="text-primary">$34,989</span> was made</strong></h5>
+                                                          <small class="ntf_stdt">Your monthly payout was sent to your account</small>
+                                                     </a>
+                                                </div>
+                                           </div>
+                                           <p class="ntf_tme">Yesterday</p>
+                                      </div>
+                                 </li>
+                             </ul>
+                       </div>
+                          
+                           <li class="nav-item dropdown pfl_ctn_lg">
+                               <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   <div class="pinf__ctn">
+                                       <div class="pinf_anm">DA</div>
+                                       <div class="pinf_inf">
+                                           <span>Danny A</span>
+                                           <span>d***@gmail.com</span>
+                                       </div>
+                                   </div>
+                               </a>
+                               <ul class="dropdown-menu pfl_dpw">
                                    <li class="p-1"><a class="dropdown-item" href="profile.html"><i
-                                                  class="fa fa-user"></i>&nbsp;
-                                             Profile</a></li>
+                                               class="fa fa-user"></i>&nbsp;
+                                           Profile</a></li>
                                    <li class="p-1"><a class="dropdown-item" href="notification.html"><i
-                                                  class="fa fa-bell"></i>&nbsp;
-                                             Notification</a></li>
+                                               class="fa fa-bell"></i>&nbsp;
+                                           Notification</a></li>
                                    <li class="p-1"><a class="dropdown-item" href="message.html"><i
-                                                  class="fa fa-envelope"></i>&nbsp;
-                                             Message</a></li>
+                                               class="fa fa-envelope"></i>&nbsp;
+                                           Message</a></li>
                                    <li class="p-1"><a class="dropdown-item" href="reservation.html"><i
-                                                  class="fa fa-calendar-check"></i>&nbsp; Reservation</a></li>
+                                               class="fa fa-calendar-check"></i>&nbsp; Reservation</a></li>
                                    <li class="p-1"><a class="dropdown-item" href="listing.html"><i
-                                                  class="fa fa-bookmark"></i>&nbsp;
-                                             Saved Listing</a></li>
+                                               class="fa fa-bookmark"></i>&nbsp;
+                                           Saved Listing</a></li>
                                    <li class="p-1"><a class="dropdown-item" href="insight.html"><i
-                                                  class="fa fa-eye"></i>&nbsp;
-                                             Insights</a></li>
+                                               class="fa fa-eye"></i>&nbsp;
+                                           Insights</a></li>
                                    <li class="p-1"><a class="dropdown-item" href="history.html"><i
-                                                  class="fa fa-history"></i>&nbsp;
-                                             History</a></li>
+                                               class="fa fa-history"></i>&nbsp;
+                                           History</a></li>
                                    <li><a class="dropdown-item" href="../login.html"><i
-                                                  class="fa fa-sign-out-alt"></i>&nbsp;
-                                             Logout</a></li>
-                              </ul>
-                         </div>
-
-                         <!-- Nav Item -->
-                         <ul class="navbar-nav ma-auto  nav-sm">
-                              <!-- Logo on small screen -->
-                              <div class="sm-logo-ctn d-lg-none ">
-                                   <img src="../asset/img/logo.png" class="img-fluid mb-2" alt="">
-                              </div>
-                              <!-- <span class="close d-lg-none d-sm-block">&times;</span> -->
-                              <li class="nav-item">
-                                   <a class="nav-link" href="dashboard.html">Home </a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link" href="javascript:;">About</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link " href="javascript:;">Faq</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link getstarted-btn" href="javascript:;">Contact us</a>
-                              </li>
-                              <li class="nav-item dropdown pfl_ctn_lg">
-                                   <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="pinf__ctn">
-                                             <div class="pinf_anm">DA</div>
-                                             <div class="pinf_inf">
-                                                  <span>Danny A</span>
-                                                  <span>d***@gmail.com</span>
-                                             </div>
-                                        </div>
-                                   </a>
-                                   <ul class="dropdown-menu pfl_dpw">
-                                        <li class="p-1"><a class="dropdown-item" href="profile.html"><i
-                                                       class="fa fa-user"></i>&nbsp;
-                                                  Profile</a></li>
-                                        <li class="p-1"><a class="dropdown-item" href="notification.html"><i
-                                                       class="fa fa-bell"></i>&nbsp;
-                                                  Notification</a></li>
-                                        <li class="p-1"><a class="dropdown-item" href="message.html"><i
-                                                       class="fa fa-envelope"></i>&nbsp;
-                                                  Message</a></li>
-                                        <li class="p-1"><a class="dropdown-item" href="reservation.html"><i
-                                                       class="fa fa-calendar-check"></i>&nbsp; Reservation</a></li>
-                                        <li class="p-1"><a class="dropdown-item" href="listing.html"><i
-                                                       class="fa fa-bookmark"></i>&nbsp;
-                                                  Saved Listing</a></li>
-                                        <li class="p-1"><a class="dropdown-item" href="insight.html"><i
-                                                       class="fa fa-eye"></i>&nbsp;
-                                                  Insights</a></li>
-                                        <li class="p-1"><a class="dropdown-item" href="history.html"><i
-                                                       class="fa fa-history"></i>&nbsp;
-                                                  History</a></li>
-                                        <li><a class="dropdown-item" href="../login.html"><i
-                                                       class="fa fa-sign-out-alt"></i>&nbsp; Logout</a></li>
-                                   </ul>
-                              </li>
-                         </ul>
-                         <!-- Harmburger menu icon -->
-                         <div class="menu-btn d-lg-none d-sm-block">
-                              <div class="menu-btn-burger"></div>
-                         </div>
-                    </div>
+                                               class="fa fa-sign-out-alt"></i>&nbsp; Logout</a></li>
+                               </ul>
+                           </li>
+                       </ul>
+                       <!-- Harmburger menu icon -->
+                       <div class="menu-btn d-lg-none d-sm-block">
+                           <div class="menu-btn-burger"></div>
+                       </div>
+                   </div>
                </nav>
-          </header>
+           </header>
 
           <div class="container payments mb-5">
                <div class="row">
