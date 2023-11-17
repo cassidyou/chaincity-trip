@@ -406,8 +406,10 @@ header{
     display: flex;
     align-items: center;
 }
-
-.navbar #log {
+.navbar-brand{
+    margin-right: 0.5rem!important;
+}
+.navbar #logo {
     height: auto;
     width: 100px;
 }
