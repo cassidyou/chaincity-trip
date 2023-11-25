@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChainCity || Welcome</title>
-  <link rel="shortcut icon" type="text/css" href="asset/img/chaincitylogo.jpg">
+  <link rel="shortcut icon" type="text/css" href="asset/img/logo.png">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
@@ -43,11 +43,15 @@
               <div class="row" style="position: relative;">
                 <div class="col-12">
                   <div class="rlf_verify form-account">
+                    <div class="text-center mb-3">
+                      <img src="asset/img/icon-hand-wave.png" width="60px" alt="">
+                    </div>
                     <h2 class="fw-bold rlf-header-md text-center">
                      Welcome to <br> ChainCity!
                     </h2>
                     <p class="text-muted">
-                       Redirecting to dashboard &nbsp; <i class="fa fa-spin fa-spinner"></i>
+                       Redirecting to your dashboard... &nbsp; 
+                       <!-- <i class="fa fa-spin fa-spinner"></i> -->
                     </p>
                   </div>
                 </div>
@@ -73,7 +77,7 @@
   <script>
     $(document).ready(function(){
       setTimeout(() => {
-        location.href = 'agent/dashboard.html';
+        location.href = 'user/dashboard.html';
       }, 3000);
     })
   </script>

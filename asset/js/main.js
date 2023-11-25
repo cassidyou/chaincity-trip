@@ -86,10 +86,28 @@ $(document).ready(function() {
         });
 
 
-        var counter = $('.counter').text();
-        counter = parseInt(counter);
-        
-       var  count = (counter > 99) ? '99+' : counter;
-       $('.counter').text(count);
+        //STICKY TOP NAVBAR FOR HEADER1
+        // var scrollTop = $(window).scrollTop();
+        //   if (scrollTop > 10) {
+        //     $('.header1').find('nav.navbar').addClass('sticky');
+        //   }else{
+        //     $('.header1').find('nav.navbar').removeClass('sticky');
+        //   }
+       
+
+        // $(window).on('scroll', function(){
+        //   var scrollTop = $(window).scrollTop();
+        //   if (scrollTop > 10) {
+        //     $('.header1').find('nav.navbar').addClass('sticky');
+        //   }else{
+        //     $('.header1').find('nav.navbar').removeClass('sticky');
+        //   }
+        // });
+
+
+
+
+       var currentYear = new Date().getFullYear();
+       $('#year').text(currentYear);
     
 });

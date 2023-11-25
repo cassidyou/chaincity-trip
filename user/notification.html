@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChainCity - User Notification</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="../asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../vendor/fontawesome/all.min.css">
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="../vendor/datatables/css/jquery.dataTables.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Lightgallery CSS -->
+    <link rel="stylesheet" href="../vendor/lightgallery/css/lightgallery.min.css">
+
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../asset/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="../asset/css/chaincitydashboard.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-3 chat-container">
+                        <div class="chat-header">
+                            <div class="msg_sidebar_ctn">
+                                <div class="sm-logo-ctn">
+                                    <img src="../asset/img/logo.png" class="img-fluid mb-2" alt="">
+                                </div>
+                            </div>
+                            <h3 class="notification-header">Notificatons</h3>
+                        </div>
+                        <div class="chats-ctn">
+                            <div class="notfn active">
+                                <img src="../asset/img/element-plus-active.png" class="icon-active d-none" alt="">
+                                <img src="../asset/img/element-plus.png" class="icon-inactive" alt="">
+                                <span>All</span>
+
+                            </div>
+                            <div class="notfn">
+                                <img src="../asset/img/msg-active.png" class="icon-active d-none" alt="">
+                                <img src="../asset/img/msg.png" class="icon-inactive" alt="">
+                                <span>System Notifications</span>
+
+                            </div>
+                            <div class="notfn">
+                                <img src="../asset/img/announcement-active.png" class="icon-active d-none" alt="">
+                                <img src="../asset/img/announcement.png" class="icon-inactive" alt="">
+                                <span>Latest Events</span>
+
+                            </div>
+                            <div class="notfn">
+                                <img src="../asset/img/volume-high-active.png" class="icon-active d-none" alt="">
+                                <img src="../asset/img/volume-high.png" class="icon-inactive" alt="">
+                                <span>Announcements</span>
+
+                            </div>
+                            <div class="notfn">
+                                <img src="../asset/img/icon-moneys-black-white.png" class="icon-active d-none" alt="">
+                                <img src="../asset/img/moneysn.png" class="icon-inactive" alt="">
+                                <span>Payments & Rewards</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7 col-lg-9 chat-area-container d-none d-md-block">
+                        <div class="chat-area-header notify">
+                            <div class="d-flex align-items-center justify-content-between w-100">
+                                <div class="d-flex align-items-center justify-content-start gap-3">
+                                    <span class="bck d-none"><i class="fa fa-arrow-left"></i></span>
+                                    <div class="chat_header_img">
+                                        <img src="../asset/img/team1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="dsb-header-xs mb-0 pb-0">Oluchi Cassidy</h3>
+                                        <small class="op-7">@cassidy</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="nav-item  dropdown">
+                                        <a class="nav-link" style="margin-left: 0!important;" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="pinf__ctn">
+                                                <div class="pinf_anm bell-ctn"> <i class="fa fa-bell"></i></div>
+
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu ntf_dpw p-3 drop-notify">
+                                            <li class="d-flex align-items-start justify-content-between border-bottom py-3">
+                                             <h3 class="dsb-header-sm text-primary mb-0">Notifications</h3>
+                                             <a href="notification.html" class="text-dark"> <img src="../asset/img/brush.png" width="20px" alt=""> See all <i class="fa fa-arrow-right"></i></a>
+                                            </li>
+                                             <!-- <li class="nav_dpd_itm">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/note-2.png" alt="">
+                                                            </div>
+                                                            <div >
+                                                                 <a href="notification.html" class="text-dark">
+                                                                      <h5 class="ntf_heading"><strong>New listing created</strong></h5>
+                                                                      <small class="ntf_stdt">You created a new listing now</small>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <p class="ntf_tme">11:46am</p>
+                                                  </div>
+                                             </li> -->
+                                             <li class="nav_dpd_itm">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/bookings_nt_img.png" alt="">
+                                                            </div>
+                                                            <div >
+                                                                 <a href="notification.html" class="text-dark">
+                                                                      <h5 class="ntf_heading"><strong>50 new bookings generated</strong></h5>
+                                                                      <small class="ntf_stdt">You have 50 new bookings today</small>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <p class="ntf_tme">Yesterday</p>
+                                                  </div>
+                                             </li>
+                                             <li class="nav_dpd_itm">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/moneys.png" alt="">
+                                                            </div>
+                                                            <div>
+                                                                 <a href="notification.html" class="text-dark">
+                                                                      <h5 class="ntf_heading"><strong>Payout of <span class="text-primary">$34,989</span> was made</strong></h5>
+                                                                      <small class="ntf_stdt">Your monthly payout was sent to your account</small>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <p class="ntf_tme">Yesterday</p>
+                                                  </div>
+                                             </li>
+                                             <!-- <li class="nav_dpd_itm">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/note-2-read.png" alt="">
+                                                            </div>
+                                                            <div >
+                                                                 <a href="notification.html" class="text-dark read">
+                                                                      <h5 class="ntf_heading"><strong>New listing created</strong></h5>
+                                                                      <small class="ntf_stdt">You created a new listing now</small>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <p class="ntf_tme">11:46am</p>
+                                                  </div>
+                                             </li> -->
+                                             <li class="nav_dpd_itm">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/bookings_nt_img_read.png" alt="">
+                                                            </div>
+                                                            <div >
+                                                                 <a href="notification.html" class="text-dark read">
+                                                                      <h5 class="ntf_heading"><strong>50 new bookings generated</strong></h5>
+                                                                      <small class="ntf_stdt">You have 50 new bookings today</small>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <p class="ntf_tme">Yesterday</p>
+                                                  </div>
+                                             </li>
+                                             <li class="nav_dpd_itm">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/moneys-read.png" alt="">
+                                                            </div>
+                                                            <div>
+                                                                 <a href="notification.html" class="text-dark read">
+                                                                      <h5 class="ntf_heading"><strong>Payout of <span class="text-primary">$34,989</span> was made</strong></h5>
+                                                                      <small class="ntf_stdt">Your monthly payout was sent to your account</small>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <p class="ntf_tme">Yesterday</p>
+                                                  </div>
+                                             </li>
+                                         </ul>
+                                    </div>
+                                    <div class="nav-item  dropdown">
+                                        <a class="nav-link" style="margin-left: 0!important;" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="pinf__ctn">
+                                                <div class="pinf_anm">DA</div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu pfl_dpw">
+                                            <li class="p-1"><a class="dropdown-item" href="profile.html">Profile</a>
+                                            </li>
+                                            <li class="p-1"><a class="dropdown-item"
+                                                    href="notification.html">Notification</a></li>
+                                            <li class="p-1"><a class="dropdown-item" href="message.html">Messages</a>
+                                            </li>
+                                            <li class="p-1"><a class="dropdown-item"
+                                                    href="reservation.html">Reservations</a></li>
+                                            <li class="p-1"><a class="dropdown-item" href="listing.html">Saved
+                                                    Listings</a></li>
+                                            <li class="p-1"><a class="dropdown-item" href="history.html">History</a>
+                                            </li>
+                                            <hr style="margin-top: .5rem!important;margin-bottom: .5rem!important;">
+                                            <li class="p-1"><a class="dropdown-item" href="javascript:;">Help Center</a>
+                                            </li>
+                                            <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                                    href="../login.html">
+                                                    <span>Logout</span>
+                                                    <img src="../asset/img/icon-logout-red.png" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end w-100 pb-2 mt-4">
+                                <span class="mark-all-read c-pointer">
+                                    <img src="../asset/img/brush.png" width="20px" alt=""> &nbsp;
+                                    Mark all as read
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="chat-area-body" style="padding-top: 120px;">
+                            <ul class="not_pg p-0 m-0">
+                                <li class="nav_dpd_itm not_itm">
+                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/note-2.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h5 class="ntf_heading"><strong>New listing created</strong></h5>
+                                                <small class="ntf_stdt">You created a new listing now</small>
+                                                <p class="ntf_tme mt-2 mb-0">11:46am</p>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">See More <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </li>
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/bookings_nt_img.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h5 class="ntf_heading"><strong>50 new bookings generated</strong></h5>
+                                                <small class="ntf_stdt">You have 50 new bookings today</small>
+                                                <p class="ntf_tme mt-2 mb-0">11:46am</p>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">See More <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </li>
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/moneys.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h5 class="ntf_heading"><strong>Payout of <span
+                                                            class="text-primary">$34,989</span> was made</strong></h5>
+                                                <small class="ntf_stdt">Your monthly payout was sent to your
+                                                    account</small>
+                                                    <p class="ntf_tme mt-2 mb-0">11:46am</p>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">See More <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </li>
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/note-2-read.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h5 class="ntf_heading op-7"><strong>New listing created</strong></h5>
+                                                <small class="ntf_stdt">You created a new listing now</small>
+                                                <p class="ntf_tme mt-2 mb-0">11:46am</p>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">See More <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </li>
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/bookings_nt_img_read.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h5 class="ntf_heading op-7"><strong>50 new bookings generated</strong></h5>
+                                                <small class="ntf_stdt">You have 50 new bookings today</small>
+                                                <p class="ntf_tme mt-2 mb-0">11:46am</p>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">See More <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </li>
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between gap-2">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/moneys-read.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h5 class="ntf_heading op-7"><strong>Payout of <span
+                                                            class="text-primary">$34,989</span> was made</strong></h5>
+                                                <small class="ntf_stdt op-7">Your monthly payout was sent to your
+                                                    account</small>
+                                                    <p class="ntf_tme mt-2 mb-0">11:46am</p>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">See More <i class="fa fa-arrow-right"></i></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <!-- JS FILES -->
+    <script src="../vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="../vendor/popper/popper.js"></script>
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/fontawesome/all.min.js"></script>
+    <script src="../vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="../vendor/sweet-alert/sweetalert.min.js"></script>
+    <script src="../asset/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#flexSwitchCheckDefaultPswd').on('change', function () {
+                $('.pswd-form').toggleClass('d-none');
+            });
+
+            $('.notfn.active').children('.icon-active').removeClass('d-none');
+            $('.notfn.active').children('.icon-inactive').addClass('d-none');
+
+
+            var screenWidth = $(window).width();
+
+            $('.notfn').on('click', function () {
+                if (screenWidth <= 767) {
+                    var html = $(this).html();
+                    $('.notype').html(html);
+
+                    $(this).parents('.chat-container').addClass('d-none');
+                    $(this).parents('.chat-container').siblings('.chat-area-container').removeClass('d-none');
+                }
+
+                $(this).siblings('.notfn').removeClass('active');
+                $(this).siblings('.notfn').children('.icon-active').addClass('d-none');
+                $(this).siblings('.notfn').children('.icon-inactive').removeClass('d-none');
+                
+                $(this).addClass('active');
+                $(this).children('.icon-inactive').addClass('d-none');
+                $(this).children('.icon-active').removeClass('d-none');
+
+            });
+
+            if (screenWidth <= 767) {
+
+                $('.bck').on('click', function () {
+                    $(this).parents('.chat-area-container').addClass('d-none');
+                    $(this).parents('.chat-area-container').siblings('.chat-container').removeClass('d-none');
+                });
+
+            }
+        });
+    </script>
+</body>
+
+</html>

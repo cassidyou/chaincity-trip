@@ -245,6 +245,8 @@ $(document).ready(function () {
 
   });
 
+
+
   // dataTable5
   var table = $('#example5').DataTable({
     searching: false,
@@ -328,6 +330,8 @@ $(document).ready(function () {
 
   // table row
   var table = $('#dataTable1, #dataTable2, #dataTable3, #dataTable4,  #example3, #example4 ').DataTable({
+    select: true,
+    searching: true,
     language: {
       paginate: {
         next: '<i class="fa fa-angle-double-right" aria-hidden="true"></i>',
@@ -338,6 +342,7 @@ $(document).ready(function () {
   $('#example tbody').on('click', 'tr', function () {
     var data = table.row(this).data();
   });
+
 
 
   /****************** Dropify *************************************/
@@ -354,6 +359,23 @@ $(document).ready(function () {
       },
       tpl: {
             message: '<div class="dropify-message"><span class="file-icon" /> <p style="font-size: 18px!important; color: #000000; opacity: 0.7;"><b>{{ default }}</b></p><small style="font-size: 14px">Choose at least 5 photos</small><br> <span style="border-bottom: 1px solid; font-size: 14px; color: #000; margin-bottom: 5px;opacity: 0.7;">Upload from device</span></div>',
+           
+        }
+    });
+  }
+  if($('.dropify-id').length > 0){
+    $('.dropify-id').dropify({
+      messages: {
+        'default': 'Drag and drop your photos here',
+        'replace': 'Drag and drop or click to replace',
+        'remove': 'Remove',
+        'error': 'Ooops, something wrong appended.'
+      },
+      error: {
+        'fileSize': 'The file size is too big (2M max).'
+      },
+      tpl: {
+            message: '<div class="dropify-message"><img src="../asset/img/front-of-id-card.png" class="img-fluid p-3 h-100" />  </span></div>',
            
         }
     });

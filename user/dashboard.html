@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChainCity - User Dashboard</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="../asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../vendor/fontawesome/all.min.css">
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="../vendor/datatables/css/jquery.dataTables.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Lightgallery CSS -->
+    <link rel="stylesheet" href="../vendor/lightgallery/css/lightgallery.min.css">
+
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../asset/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="../asset/css/chaincitydashboard.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container cosynav">
+                    <a class="navbar-brand" href=""><img src="../asset/img/logo.png" class="img-fluid" id="log"
+                            alt="logo"></a>
+                    <!-- Search -->
+                    <button class="btn_sc" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <span class="text-muted sc_icon_ctn">
+                            <img src="../asset/img/icon-search.png" alt=""> &nbsp;
+                            <span class="search_keyword" style="opacity: .6;">Search here...</span>
+                        </span>
+                        <span class="filter_icon"><img src="../asset/img/filter.png" alt=""></span>
+                    </button>
+
+                    <!-- Profile dropdown on small screen -->
+                    <div class="nav-item  dropdown pfl_ctn_sm">
+                        <a class="nav-link" style="margin-left: 0!important;" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="pinf__ctn">
+                                <div class="pinf_anm">DA</div>
+                                <div class="pinf_inf">
+                                    <span>Danny A</span>
+                                    <span>d***@gmail.com</span>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu pfl_dpw">
+                            <li class="p-1"><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="notification.html">Notification</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="message.html">Messages</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="reservation.html">Reservations</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="listing.html">Saved Listings</a></li>
+                            <li class="p-1"><a class="dropdown-item" href="history.html">History</a></li>
+                            <hr style="margin-top: .5rem!important;margin-bottom: .5rem!important;">
+                            <li class="p-1"><a class="dropdown-item" href="javascript:;">Help Center</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="../login.html">
+                                    <span>Logout</span>
+                                    <img src="../asset/img/icon-logout-red.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Nav Item -->
+                    <ul class="navbar-nav ma-auto  nav-sm">
+                        <!-- Logo on small screen -->
+                        <div class="sm-logo-ctn d-lg-none ">
+                            <img src="../asset/img/logo.png" class="img-fluid mb-2" alt="">
+                        </div>
+                        <!-- <span class="close d-lg-none d-sm-block">&times;</span> -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="dashboard.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="faq.html">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link getstarted-btn" href="contact.html">Contact us</a>
+                        </li>
+
+                        <li class="nav-item dropdown pfl_ctn_lg">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="pinf__ctn">
+                                    <div class="pinf_anm">DA</div>
+                                    <div class="pinf_inf">
+                                        <span>Danny A</span>
+                                        <span>d***@gmail.com</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu pfl_dpw">
+                                <li class="p-1"><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="notification.html">Notification</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="message.html">Messages</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="reservation.html">Reservations</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="listing.html">Saved Listings</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="history.html">History</a></li>
+                                <hr style="margin-top: .5rem!important;margin-bottom: .5rem!important;">
+                                <li class="p-1"><a class="dropdown-item" href="javascript:;">Help Center</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="../login.html">
+                                        <span>Logout</span>
+                                        <img src="../asset/img/icon-logout-red.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Harmburger menu icon -->
+                    <div class="menu-btn d-lg-none d-sm-block">
+                        <div class="menu-btn-burger"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <button class="transparency" id="completeRegModalBtn" data-bs-toggle="modal"
+            data-bs-target="#completeRegModal"></button>
+            <!--poplular searches--->
+            <div class="container poplular-search mt-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h1 class="dsb-header">Popular Resident</h1>
+                    <div>
+                        <a href="javascript:;" class="text-dark"> See all <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_2.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_2.jpg"
+                                    data-src="../asset/img/products/product_2.jpg">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_3.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_3.jpg"
+                                    data-src="../asset/img/products/product_3.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_4.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_4.png"
+                                    data-src="../asset/img/products/product_4.png">
+                                </a>
+                                <a href="../asset/img/products/product_5.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_5.png"
+                                    data-src="../asset/img/products/product_5.png">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_2.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_3.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_4.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_5.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark">Ebonyi State, Nigeria</a>
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_6.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_6.png"
+                                    data-src="../asset/img/products/product_6.png">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_7.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_7.jpg"
+                                    data-src="../asset/img/products/product_7.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_8.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_8.jpg"
+                                    data-src="../asset/img/products/product_8.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_9.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_9.jpg"
+                                    data-src="../asset/img/products/product_9.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_6.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_7.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_8.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_9.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark">Ebonyi State, Nigeria</a>
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_10.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_10.jpg"
+                                    data-src="../asset/img/products/product_10.jpg">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_11.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_11.jpg"
+                                    data-src="../asset/img/products/product_11.jpg">
+                                </a>
+                                <a href="../asset/img/products/product-_12.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product-_12.jpg"
+                                    data-src="../asset/img/products/product-_12.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_13.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_13.jpg"
+                                    data-src="../asset/img/products/product_13.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_10.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_11.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product-_12.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_13.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark">Ebonyi State, Nigeria</a>
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_14.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_14.png"
+                                    data-src="../asset/img/products/product_14.png">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_15.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_15.jpg"
+                                    data-src="../asset/img/products/product_15.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_2.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_2.jpg"
+                                    data-src="../asset/img/products/product_2.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_3.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_3.jpg"
+                                    data-src="../asset/img/products/product_3.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_14.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_15.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_2.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_3.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark">Ebonyi State, Nigeria</a>
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_10.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_10.jpg"
+                                    data-src="../asset/img/products/product_10.jpg">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_11.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_11.jpg"
+                                    data-src="../asset/img/products/product_11.jpg">
+                                </a>
+                                <a href="../asset/img/products/product-_12.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product-_12.jpg"
+                                    data-src="../asset/img/products/product-_12.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_13.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_13.jpg"
+                                    data-src="../asset/img/products/product_13.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_10.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_11.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product-_12.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_13.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark">Ebonyi State, Nigeria</a>
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_14.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_14.png"
+                                    data-src="../asset/img/products/product_14.png">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_15.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_15.jpg"
+                                    data-src="../asset/img/products/product_15.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_2.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_2.jpg"
+                                    data-src="../asset/img/products/product_2.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_3.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_3.jpg"
+                                    data-src="../asset/img/products/product_3.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_14.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_15.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_2.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_3.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark">Ebonyi State, Nigeria</a>
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_6.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_6.png"
+                                    data-src="../asset/img/products/product_6.png">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_7.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_7.jpg"
+                                    data-src="../asset/img/products/product_7.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_8.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_8.jpg"
+                                    data-src="../asset/img/products/product_8.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_9.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_9.jpg"
+                                    data-src="../asset/img/products/product_9.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_6.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_7.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_8.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_9.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark">Ebonyi State, Nigeria</a>
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                        <div class="psr_ctn">
+                            <div class="wishlist_icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="lightgallery">
+                                <a href="../asset/img/products/product_2.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_2.jpg"
+                                    data-src="../asset/img/products/product_2.jpg">
+                                    <div class="lg__btn"><i class="fa fa-eye"></i></div>
+                                </a>
+                                <a href="../asset/img/products/product_3.jpg"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_3.jpg"
+                                    data-src="../asset/img/products/product_3.jpg">
+                                </a>
+                                <a href="../asset/img/products/product_4.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_4.png"
+                                    data-src="../asset/img/products/product_4.png">
+                                </a>
+                                <a href="../asset/img/products/product_5.png"
+                                    data-sub-html="What the apartment look like"
+                                    data-exthumbimage="../asset/img/products/product_5.png"
+                                    data-src="../asset/img/products/product_5.png">
+                                </a>
+                            </div>
+                            <div class="swiper popularSearchSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_2.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_3.jpg');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_4.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="property-description.html">
+                                            <div class="img"
+                                                style="background-image: url('../asset/img/products/product_5.png');">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="hse_desc">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4><a href="property-description.html" class="text-dark"></a>Ebonyi State, Nigeria
+                                    </h4>
+                                    <span><i class="fas fa-star"></i> 4.96</span>
+                                </div>
+                                <p>Nkaliki, Abakaliki</p>
+                                <p>4000 kilometers away</p>
+                                <h6>$6,481 &nbsp; 1sqm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <!-- Complete Registration Modal -->
+            <div class="modal fade" id="completeRegModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close btn-close-regForm transparency" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        <div class="modal-body rounded" style="background: #fff;">
+                            <div class="container-fluid">
+                                <form action="" id="completeRegForm">
+                                    <h2 class="nfxb-heading" >Complete Registration</h2>
+                                    <p class="text-sm">
+                                        Please take a minute to fill in your information. You will only have to do this
+                                        once. We promise!
+                                    </p>
+                                    <div class="row mt-5">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="">First Name</label>
+                                                <input type="text" name="name" value="John" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="">Last Name</label>
+                                                <input type="text" name="name" id="" value="Doe" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <div class="form-group">
+                                                <label for="">Email Address</label>
+                                                <input type="text" name="name" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="">Gender</label>
+                                                <select name="name" id="" class="form-control">
+                                                    <option value="">Select</option>
+                                                    <option value="">Male</option>
+                                                    <option value="">Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="">Date Of Birth</label>
+                                                <input type="date" name="name" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="">State</label>
+                                                <select name="name" id="" class="form-control">
+                                                    <option value="">Select</option>
+                                                    <option value="">Ebonyi</option>
+                                                    <option value="">Kogi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="">City</label>
+                                                <select name="name" id="" class="form-control">
+                                                    <option value="">Select</option>
+                                                    <option value="">Abakaliki</option>
+                                                    <option value="">Aba</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <div class="form-group">
+                                                <label for="">Phone Number</label>
+                                                <input type="tel" name="name" placeholder="ex. 08376526536" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <label for="">Change Password</label>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckDefaultPswd">
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 mt-2 i-group-div pswd-ctn d-none">
+                                                <span class="input-group-text pr-0" id="basic-addon1"><img src="../asset/img/icon-key.png" alt=""></span>
+                                                <input type="password" name="password"
+                                                    class="form-control shadow-none psw_input"
+                                                    placeholder="ex. abc1234">
+                                                <div class="input-group-text rlf-hd">
+                                                    <span class="d-none rlf-hd-show"><i class="fa fa-eye"></i></span>
+                                                    <span class="rlf-hd-hide"><i class="fa fa-eye-slash"></i></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button type="button" id="completeRegBtn"
+                                            class="rlf-btn rlf-btn-secondary my-3 ff-btn">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Modal -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid p-3">
+                                <button type="button" class="btn-close search-btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <div class="col-md-10 m-auto">
+                                    <div class="row justify-content-center ltn-srh">
+                                        <div class="col-md-3 col-sm-4 ctn ctn-start">
+                                            <div>
+                                                <label>Locations</label>
+                                                <br>
+                                                <select name="location">
+                                                    <option>Select your city</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-4  ctn">
+                                            <div class="border-start-end">
+                                                <label>Type</label>
+                                                <br>
+                                                <select name="property-type">
+                                                    <option>Select property type</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 ctn ctn-end">
+                                            <div>
+                                                <label>Price Range</label>
+                                                <br>
+                                                <select name="price-range">
+                                                    <option>Select rent range</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-12 d-flex ctn ctn-end end">
+                                            <button class="rlf-btn rlf-btn-primary"><img
+                                                    src="../asset/img/icon-search-white.png" class="srh-img"
+                                                    width="20px" alt=""></i> <span
+                                                    class="srh-text">Search</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!--footer--->
+        <footer class="mt-5 pt-5">
+            <div class="container">
+                <div class="row justify-content-center flex-wrap footer">
+                    <div class="col-md-7 mt-3">
+                        <div class="col-12 text-start mb-3">
+                            <a href="javascript:;">
+                                <img src="../asset/img/logo.png">
+                            </a>
+                        </div>
+                        <ul class="links footer-links">
+                            <li><a href="dashboard.html" class="active"> Home</a></li>
+                            <li><a href="about.html"> About</a></li>
+                            <li><a href="faq.html"> FAQ</a></li>
+                            <li><a href="contact.html"> Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <small>Receive the most recent news and updates directly in your email inbox!</small>
+                        </div>
+                        <form action="javascript:;">
+                            <div class="form-group footer-newsletter">
+                                <div class="input-group">
+                                    <input type="text" name="email" placeholder="Enter Email" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Subscribe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-4 col-lg-4">
+                                <ul class="socials">
+                                    <li><a href="javascript:;"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-4"></div>
+                            <div class="col-sm-8 col-12 col-lg-4 text-end text-fl-center">
+                                <a href="javascript:;" class="text-decoration-none text-muted me-2">Terms of service</a>
+                                <a href="javascript:;" class="text-decoration-none text-muted me-2">Privacy policy</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <hr>
+                            <div class="col-sm-12 text-center pb-3 sub-footer">
+                                ChainCity &copy; <span id="year"></span>.
+                                Powered by <a href="https://tutapis.com" class="tutapis">Tutapis</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- JS FILES -->
+    <script src="../vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="../vendor/popper/popper.js"></script>
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/fontawesome/all.min.js"></script>
+    <script src="../vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../vendor/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="../vendor/sweet-alert/sweetalert.min.js"></script>
+    <!-- <script src="../vendor/sweet-alert/jquery.sweet-alert.js"></script> -->
+    <script src="../asset/js/plugins_init.js"></script>
+    <script src="../asset/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            var completeReg = 0;
+            if (!completeReg) {
+                setTimeout(() => {
+                    $('#completeRegModalBtn').click();
+                }, 1);
+            }
+
+
+            $('#flexSwitchCheckDefaultPswd').on('change', function () {
+                $('.pswd-ctn').toggleClass('d-none');
+            });
+        });
+    </script>
+</body>
+
+</html>

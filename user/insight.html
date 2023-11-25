@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChainCity - User Insights</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="../asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../vendor/fontawesome/all.min.css">
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="../vendor/datatables/css/jquery.dataTables.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Lightgallery CSS -->
+    <link rel="stylesheet" href="../vendor/lightgallery/css/lightgallery.min.css">
+
+     <!-- Dropify CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.css"
+     integrity="sha512-In/+MILhf6UMDJU4ZhDL0R0fEpsp4D3Le23m6+ujDWXwl3whwpucJG1PEmI3B07nyJx+875ccs+yX2CqQJUxUw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../asset/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="../asset/css/chaincitydashboard.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <header class="header2">
+            <nav class="navbar">
+                <div class="container cosynav">
+                    <a class="navbar-brand" href=""><img src="../asset/img/logo.png" class="img-fluid" id="log"
+                            alt="logo"></a>
+
+                    <div class="d-flex align-items-center justify-content-between gap-5 header2-nav-links">
+                        <a class="nav-link " href="listing.html">Listing</a>
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                        <a class="nav-link" href="message.html">Messages</a>
+                        <a class="nav-link active" href="insight.html">Insights</a>
+                        <a class="nav-link" href="javascript:;" data-bs-toggle="modal"
+                        data-bs-target="#agent-form">Become an Agent</a>
+                    </div>
+
+
+                    <div class="d-flex align-items-center justify-content-between gap-3">
+                        <div class="nav-item  dropdown">
+                            <a class="nav-link" style="margin-left: 0!important;" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="pinf__ctn">
+                                    <div class="pinf_anm bell-ctn"> <i class="fa fa-bell"></i></div>
+
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu ntf_dpw p-3 drop-notify">
+                                <li class="d-flex align-items-start justify-content-between border-bottom py-3">
+                                    <h3 class="dsb-header-sm text-primary mb-0">Notifications</h3>
+                                    <a href="notification.html" class="text-dark"> <img src="../asset/img/brush.png"
+                                            width="20px" alt=""> See all <i class="fa fa-arrow-right"></i></a>
+                                </li>
+                                <!-- <li class="nav_dpd_itm">
+                                  <div class="d-flex align-items-center justify-content-between">
+                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                 <img src="../asset/img/note-2.png" alt="">
+                                            </div>
+                                            <div >
+                                                 <a href="notification.html" class="text-dark">
+                                                      <h5 class="ntf_heading"><strong>New listing created</strong></h5>
+                                                      <small class="ntf_stdt">You created a new listing now</small>
+                                                 </a>
+                                            </div>
+                                       </div>
+                                       <p class="ntf_tme">11:46am</p>
+                                  </div>
+                             </li> -->
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/bookings_nt_img.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="notification.html" class="text-dark">
+                                                    <h5 class="ntf_heading"><strong>50 new bookings
+                                                            generated</strong></h5>
+                                                    <small class="ntf_stdt">You have 50 new bookings
+                                                        today</small>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">Yesterday</p>
+                                    </div>
+                                </li>
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/moneys.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="notification.html" class="text-dark">
+                                                    <h5 class="ntf_heading"><strong>Payout of <span
+                                                                class="text-primary">$34,989</span> was
+                                                            made</strong></h5>
+                                                    <small class="ntf_stdt">Your monthly payout was sent to
+                                                        your account</small>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">Yesterday</p>
+                                    </div>
+                                </li>
+                                <!-- <li class="nav_dpd_itm">
+                                  <div class="d-flex align-items-center justify-content-between">
+                                       <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                 <img src="../asset/img/note-2-read.png" alt="">
+                                            </div>
+                                            <div >
+                                                 <a href="notification.html" class="text-dark read">
+                                                      <h5 class="ntf_heading"><strong>New listing created</strong></h5>
+                                                      <small class="ntf_stdt">You created a new listing now</small>
+                                                 </a>
+                                            </div>
+                                       </div>
+                                       <p class="ntf_tme">11:46am</p>
+                                  </div>
+                             </li> -->
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/bookings_nt_img_read.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="notification.html" class="text-dark read">
+                                                    <h5 class="ntf_heading"><strong>50 new bookings
+                                                            generated</strong></h5>
+                                                    <small class="ntf_stdt">You have 50 new bookings
+                                                        today</small>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">Yesterday</p>
+                                    </div>
+                                </li>
+                                <li class="nav_dpd_itm">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-start justify-content-start gap-2">
+                                            <div class="img">
+                                                <img src="../asset/img/moneys-read.png" alt="">
+                                            </div>
+                                            <div>
+                                                <a href="notification.html" class="text-dark read">
+                                                    <h5 class="ntf_heading"><strong>Payout of <span
+                                                                class="text-primary">$34,989</span> was
+                                                            made</strong></h5>
+                                                    <small class="ntf_stdt">Your monthly payout was sent to
+                                                        your account</small>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="ntf_tme">Yesterday</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-item  dropdown">
+                            <a class="nav-link" style="margin-left: 0!important;" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="pinf__ctn">
+                                    <div class="pinf_anm">DA</div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu pfl_dpw">
+                                <li class="p-1"><a class="dropdown-item" href="profile.html">Profile</a>
+                                </li>
+                                <li class="p-1"><a class="dropdown-item" href="notification.html">Notification</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="message.html">Messages</a>
+                                </li>
+                                <li class="p-1"><a class="dropdown-item" href="reservation.html">Reservations</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="listing.html">Saved
+                                        Listings</a></li>
+                                <li class="p-1"><a class="dropdown-item" href="history.html">History</a>
+                                </li>
+                                <li class="p-1 d-none ba-agt"><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal"
+                                   data-bs-target="#agent-form">Become an
+                                        Agent</a>
+                                </li>
+                                <hr style="margin-top: .5rem!important;margin-bottom: .5rem!important;">
+                                <li class="p-1"><a class="dropdown-item" href="javascript:;">Help Center</a>
+                                </li>
+                                <li><a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="../login.html">
+                                        <span>Logout</span>
+                                        <img src="../asset/img/icon-logout-red.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+          <!-- Agent Registration From Modal -->
+          <div class="modal fade" id="agent-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog ">
+                    <div class="modal-content">
+                         <div class="modal-header" style="background-color: #fff;">
+                              <h4 class="text-primary ag-pr-vft-title">Agent Profile Verification <img src="../asset/img/verify.png" width="20px" alt=""></h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                         <div class="modal-body agent-form-body" style="background: #fff;">
+                              <form action="" id="completeRegForm">
+                                        <div class="form-group mb-4">
+                                             <label for="">Document Type</label>
+                                             <select name="name" id="" class="form-control">
+                                                  <option value="">Select </option>
+                                                  <option value="">NIN</option>
+                                                  <option value="">Voter's Card</option>
+                                                  <option value="">International Passport</option>
+                                             </select>
+                                        </div>
+                                      <div class="form-group mb-4">
+                                        <label for="" class="text-primary">ID Front</label>
+                                        <input type="file" class="dropify-id" data-height="300"
+                                        data-allowed-file-extensions="jpg jpeg png gif"
+                                        accept="image/*">
+                                      </div>
+                                        <button type="button" id="completeRegBtn"
+                                             class="rlf-btn rlf-btn-primary my-3 w-100 ff-btn">Request</button>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+         <!-- Agent Registration From Modal Ends -->
+       <main>
+          <div class="container payments mb-5">
+               <div class="row">
+                    <!-- Nav tabs -->
+                    <div class="custom-tab mt-5">
+                         <ul class="nav nav-tabs">
+                              <li class="nav-item">
+                                   <a class="nav-link active" data-bs-toggle="tab" href="#opportunities"></i>
+                                        Opportunities</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" data-bs-toggle="tab" href="#reviews"> Reviews</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" data-bs-toggle="tab" href="#earnings"> Earnings</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" data-bs-toggle="tab" href="#views"> Views</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" data-bs-toggle="tab" href="#issues"> Listing Issues</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" data-bs-toggle="tab" href="#no-reviews"> No Reviews Template</a>
+                              </li>
+                         </ul>
+                         <div class="tab-content mb-5">
+                              <div class="tab-pane fade show active" id="opportunities" role="tabpanel">
+                                   <h2 class="dsb-header-sm mt-5 mb-4">Resources for hosting now</h2>
+                                   <div class="row">
+                                        <div class="col-md-6 col-lg-4 mb-4">
+                                             <div class="opp_cd">
+                                                  <div class="img">
+                                                       <img src="../asset/img/products/product_3.jpg"
+                                                            class="img-fluid h-100" alt="">
+                                                  </div>
+                                                  <p>Why it's smart to offer flexible cancellations right now</p>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-4">
+                                             <div class="opp_cd">
+                                                  <div class="img">
+                                                       <img src="../asset/img/products/product_3.jpg"
+                                                            class="img-fluid h-100" alt="">
+                                                  </div>
+                                                  <p>Why it's smart to offer flexible cancellations right now</p>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-4">
+                                             <div class="opp_cd">
+                                                  <div class="img">
+                                                       <img src="../asset/img/products/product_3.jpg"
+                                                            class="img-fluid h-100" alt="">
+                                                  </div>
+                                                  <p>Why it's smart to offer flexible cancellations right now</p>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-4">
+                                             <div class="opp_cd">
+                                                  <div class="img">
+                                                       <img src="../asset/img/products/product_3.jpg"
+                                                            class="img-fluid h-100" alt="">
+                                                  </div>
+                                                  <p>Why it's smart to offer flexible cancellations right now</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="tab-pane fade show" id="reviews" role="tabpanel">
+                                   <div class="row mt-5">
+                                        <div class="col-md-6 mb-4">
+                                             <div class="rvw_cd_ctn">
+                                                  <div class="rvw_header">
+                                                       <div class="header-prl">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/products/product_3.jpg"
+                                                                      class="img-fluid h-100" alt="">
+                                                            </div>
+                                                            <div>
+                                                                 <h5 class="rvw_nm"><b>Jane Cooper</b></h5>
+                                                                 <small>Marketing Coordinator</small>
+                                                            </div>
+                                                       </div>
+                                                       <div>
+                                                            <i class="fa fa-star"></i> 4.5
+                                                       </div>
+                                                  </div>
+                                                  <div class="rvw_content">
+                                                       <h5>Great Work!</h5>
+                                                       <p>"I can't thank ChainCity Company enough for their outstanding
+                                                            service.
+                                                            From the moment I started working with them, their team of
+                                                            dedicated
+                                                            professionals went above and beyond to help me find my dream
+                                                            home"</p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                             <div class="rvw_cd_ctn">
+                                                  <div class="rvw_header">
+                                                       <div class="header-prl">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/products/product_3.jpg"
+                                                                      class="img-fluid h-100" alt="">
+                                                            </div>
+                                                            <div>
+                                                                 <h5 class="rvw_nm"><b>Jane Cooper</b></h5>
+                                                                 <small>Marketing Coordinator</small>
+                                                            </div>
+                                                       </div>
+                                                       <div>
+                                                            <i class="fa fa-star"></i> 4.5
+                                                       </div>
+                                                  </div>
+                                                  <div class="rvw_content">
+                                                       <h5>Great Work!</h5>
+                                                       <p>"I can't thank ChainCity Company enough for their outstanding
+                                                            service.
+                                                            From the moment I started working with them, their team of
+                                                            dedicated
+                                                            professionals went above and beyond to help me find my dream
+                                                            home"</p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                             <div class="rvw_cd_ctn">
+                                                  <div class="rvw_header">
+                                                       <div class="header-prl">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/products/product_3.jpg"
+                                                                      class="img-fluid h-100" alt="">
+                                                            </div>
+                                                            <div>
+                                                                 <h5 class="rvw_nm"><b>Jane Cooper</b></h5>
+                                                                 <small>Marketing Coordinator</small>
+                                                            </div>
+                                                       </div>
+                                                       <div>
+                                                            <i class="fa fa-star"></i> 4.5
+                                                       </div>
+                                                  </div>
+                                                  <div class="rvw_content">
+                                                       <h5>Great Work!</h5>
+                                                       <p>"I can't thank ChainCity Company enough for their outstanding
+                                                            service.
+                                                            From the moment I started working with them, their team of
+                                                            dedicated
+                                                            professionals went above and beyond to help me find my dream
+                                                            home"</p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                             <div class="rvw_cd_ctn">
+                                                  <div class="rvw_header">
+                                                       <div class="header-prl">
+                                                            <div class="img">
+                                                                 <img src="../asset/img/products/product_3.jpg"
+                                                                      class="img-fluid h-100" alt="">
+                                                            </div>
+                                                            <div>
+                                                                 <h5 class="rvw_nm"><b>Jane Cooper</b></h5>
+                                                                 <small>Marketing Coordinator</small>
+                                                            </div>
+                                                       </div>
+                                                       <div>
+                                                            <i class="fa fa-star"></i> 4.5
+                                                       </div>
+                                                  </div>
+                                                  <div class="rvw_content">
+                                                       <h5>Great Work!</h5>
+                                                       <p>"I can't thank ChainCity Company enough for their outstanding
+                                                            service.
+                                                            From the moment I started working with them, their team of
+                                                            dedicated
+                                                            professionals went above and beyond to help me find my dream
+                                                            home"</p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="tab-pane fade show" id="earnings" role="tabpanel">
+                                   <div class="row mt-5">
+                                        <div class="col-sm-12 mt-3">
+                                             <h3 class="dsb-header">Your Earnings</h3>
+                                             <div class="form-group mb-5">
+                                                  <label for="">Select Month</label>
+                                                  <select name="" id="" class="custom-form-control">
+                                                       <option value="">Select a month</option>
+                                                       <option value="">January</option>
+                                                       <option value="">February</option>
+                                                       <option value="">March</option>
+                                                       <option value="">April</option>
+                                                       <option value="">May</option>
+                                                       <option value="">June</option>
+                                                       <option value="">July</option>
+                                                       <option value="">August</option>
+                                                       <option value="">September</option>
+                                                       <option value="">October</option>
+                                                       <option value="">November</option>
+                                                       <option value="">December</option>
+                                                  </select>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                             <div class="mt-5 pt-5">
+                                                  <h1 class="mb-0 dsb-header-md">$1,250</h1>
+                                                  <small class="text-muted">Booked earnings for 2023</small>
+                                             </div>
+                                             <div class="d-flex gap-5">
+                                                  <div class="mt-5">
+                                                       <h2 class="mb-0 dsb-header">$250</h2>
+                                                       <small class="text-success">Payout</small>
+                                                  </div>
+                                                  <div class="mt-5">
+                                                       <h2 class="mb-0 dsb-header">$1,000</h2>
+                                                       <small class="text-warning">Pending</small>
+                                                  </div>
+                                             </div>
+                                        </div>
+                              
+                                   </div>
+                              </div>
+                              <div class="tab-pane fade show" id="issues" role="tabpanel">
+                                   <div class="d-flex align-items-center justify-content-center mt-5">
+                                        <div class="nr_ctn">
+                                             <div class="img">
+                                                  <img src="../asset/img/homeabout.png" class="img-fluid" alt="">
+                                             </div>
+                                             <h3 class="mt-4">No issues yet</h3>
+                                             <p class="mt-0">
+                                                  If issues are reported in the future, you'll be able to find that info here.
+                                                  It may take up to one day for the latest issues to appear.
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="tab-pane fade show" id="no-reviews" role="tabpanel">
+                                   <div class="d-flex align-items-center justify-content-center mt-5">
+                                        <div class="nr_ctn">
+                                             <div class="img">
+                                                  <img src="../asset/img/star.png" class="img-fluid" alt="">
+                                             </div>
+                                             <h3 class="mt-4">No reviews yet</h3>
+                                             <p class="mt-0">Your first review will show up here. We'll let you know
+                                                  when it does.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+       </main>
+
+
+        <!--footer--->
+        <footer class="mt-5 pt-5">
+            <div class="container">
+                <div class="row justify-content-center flex-wrap footer">
+                    <div class="col-md-7 mt-3">
+                        <div class="col-12 text-start mb-3">
+                            <a href="javascript:;">
+                                <img src="../asset/img/logo.png">
+                            </a>
+                        </div>
+                        <ul class="links footer-links">
+                            <li><a href="index.html"> Home</a></li>
+                            <li><a href="about.html"> About</a></li>
+                            <li><a href="faq.html"> FAQ</a></li>
+                            <li><a href="contact.html"> Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <small>Receive the most recent news and updates directly in your email inbox!</small>
+                        </div>
+                        <form action="javascript:;">
+                            <div class="form-group footer-newsletter">
+                                <div class="input-group">
+                                    <input type="text" name="email" placeholder="Enter Email" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Subscribe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-4 col-lg-4">
+                                <ul class="socials">
+                                    <li><a href="javascript:;"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-4"></div>
+                            <div class="col-sm-8 col-12 col-lg-4 text-end text-fl-center">
+                                <a href="javascript:;" class="text-decoration-none text-muted me-2">Terms of service</a>
+                                <a href="javascript:;" class="text-decoration-none text-muted me-2">Privacy policy</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <hr>
+                            <div class="col-sm-12 text-center pb-3 sub-footer">
+                                ChainCity &copy; <span id="year"></span>.
+                                Powered by <a href="https://tutapis.com" class="tutapis">Tutapis</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- JS FILES -->
+    <script src="../vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="../vendor/popper/popper.js"></script>
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/fontawesome/all.min.js"></script>
+    <script src="../vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../vendor/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="../vendor/sweet-alert/sweetalert.min.js"></script>
+    <script src="../vendor/fileuploads/js/fileupload.js"></script>
+    <!-- <script src="../vendor/sweet-alert/jquery.sweet-alert.js"></script> -->
+    <script src="../asset/js/plugins_init.js"></script>
+    <script src="../asset/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#flexSwitchCheckDefaultPswd').on('change', function () {
+                $('.pswd-form').toggleClass('d-none');
+            });
+
+            var addBtn = '<div class="text-start mt-2"> ' +
+                            '<a href="addlisting.html" class="rlf-btn rlf-btn-primary cta-btn">Create Listing &nbsp; <i class="fa fa-plus"></i></a> ' +
+                         '</div>';
+
+            $('.dataTables_info').before(addBtn);
+        });
+    </script>
+</body>
+
+</html>

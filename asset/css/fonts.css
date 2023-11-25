@@ -33,3 +33,8 @@
      font-family: 'Aeonik-regular';
      src: url('../fonts/Aeonik/Aeonik-Regular.otf');
 }
+
+@font-face {
+     font-family: 'Aeonik-bold';
+     src: url('../fonts/Aeonik/Aeonik-Bold.otf');
+}

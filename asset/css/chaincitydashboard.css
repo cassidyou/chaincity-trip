@@ -75,68 +75,7 @@ nav div section aside button aside:nth-child(2) span{
 
 
 /*================POPULAR SEARCHES===================*/
-.poplular-search{
-	border:1px solid #fff;
-}
 
-
-
-.poplular-search div section p{
-	color:gray;
-	margin:5px;
-	font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-/*=========POPUP MODAL FOR SEARCH=============*/
-.search-listing{
-	position:fixed;
-	top:0px;
-	left:0px;
-	right:0px;
-	bottom:0px;
-	background-color: rgba(0,0,0,0.7);
-}
-
-/*----------Listing-----------------*/
-.listing {
-	background-color:#fff;
-	border-radius:5px;
-	padding:10px 5px;
-	box-sizing: border-box;
-	border:0px solid green;
-	margin:10% auto;
-}
-
-.listing aside{
-	border:0px solid green;
-	padding:10px;
-	box-sizing: border-box;
-}
-
-.listing aside label{
-	font-weight: bold;
-	margin: 0px 0px;
-}
-
-.listing aside select{
-	width:100%;
-	color:gray;
-	background-color:#fff !important;
-	border:0px !important;
-	margin:6px 0px
-}
-
-
-.btn-search,.btn-search:hover{
-	width:100%;
-	height:60px;
-	margin:auto;
-	background-color: #D80450;
-	color:#fff;
-	border:0px;
-}
 
 /*===================================NEW RESEVERVATION BOOKING==============================*/
 
